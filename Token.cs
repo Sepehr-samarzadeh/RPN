@@ -8,8 +8,8 @@ namespace assignment2
 {
     public enum TokenType
     {
-        numberType,
-        operatorType,
+        NumberType,
+        OperatorType,
     }
     public class Token
     {
@@ -21,7 +21,7 @@ namespace assignment2
         {
             this.InputValue = userInput;
             this.Type = token_type;
-            if(token_type == TokenType.numberType)
+            if(token_type == TokenType.NumberType)
             {
                 if(double.TryParse(userInput,out double doubleNumber)){
                     this .NumericValue = doubleNumber;

@@ -8,6 +8,8 @@ namespace assignment2
 {
     public interface ICalculator
     {
-        double Calculate(List<Token>expression);
+        double Calculate(IEnumerable<Token> tokens);
+        IEnumerable<string> SupportedOperators { get; }
+        IEnumerable<string> OperationsHelpText { get; }
     }
 }

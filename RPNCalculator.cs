@@ -7,16 +7,43 @@ using System.Threading.Tasks;
 
 namespace assignment2
 {
-    public class RPNCalculator : ICalculator
+    public class RPNCalculator : ICalculator,ICollection<IOperation>
     {
-        public List<string> helper = new List<string>();
-       public List<string> supportedOperators = new List<string>();
+        public List<string> Helper = new List<string>();
+        //public List<string> SupportedOperators = new List<string>();
+        private readonly List<IOperation>_operations = new List<IOperation>();
+        public IEnumerator<IOperation>GetEnumerator() { return _operations.GetEnumerator(); }
+        IEnumerator IEnumerable.GetEnumerator() { return GetEnumerator(); }
+        public int Count => _operations.Count; //i was forced to use => instead of normal way why??
+        public bool IsReadOnly => false;
+        public void Add(IOperation operation)
+        {
+            _operations.Add(operation);
+        }
+
+        public void Clear()
+        {
+            _operations.Clear();
+        }
+        public bool Contains(IOperation operation)
+        {
+            return _operations.Contains(operation);
+        }
+        public void CopyTo(IOperation[] array, int arrayIndex)
+        {
+            _operations.CopyTo(array, arrayIndex);
+        }
+        public bool Remove(IOperation item)
+        {
+            return _operations.Remove(item);
+        }
+
 
 
         public RPNCalculator()
         {
-            this.supportedOperators = new List<string> { "+", "-", "*", "/", "^", "sqrt", "exp", "ln" };
-            this.helper = new List<string>
+            //this.SupportedOperators = new List<string> { "+", "-", "*", "/", "^", "sqrt", "exp", "ln" };
+            this.Helper = new List<string>
             {
               "+ - (Addition) adds two numbers",
               "- - (Subtraction) subtracts two numbers",
@@ -29,12 +56,12 @@ namespace assignment2
             };
         }
 
-        public double Calculate (List<Token> tokens)
+       /* public double Calculate(List<Token> tokens)
         {
-            Stack<double>numberStack = new Stack<double>();
-           foreach (Token token in tokens)
+            Stack<double> numberStack = new Stack<double>();
+            foreach (Token token in tokens)
             {
-                if(token.Type == TokenType.numberType)
+                if (token.Type == TokenType.NumberType)
                 {
                     numberStack.Push(token.NumericValue);
                 }
@@ -44,7 +71,7 @@ namespace assignment2
                     switch (theOperator)
                     {
                         case "+":
-                            if(numberStack.Count < 2) //is this logic correct?
+                            if (numberStack.Count < 2) //is this logic correct?
                             {
                                 throw new ArgumentOutOfRangeException("there is not enogh numbers!");
                             }
@@ -52,17 +79,17 @@ namespace assignment2
                             var num1 = numberStack.Pop();
                             numberStack.Push(num1 + num2);
                             break;
-                            case "-":
+                        case "-":
                             num2 = numberStack.Pop();
                             num1 = numberStack.Pop();
                             numberStack.Push(num1 - num2);
                             break;
-                            case "*":
+                        case "*":
                             num2 = numberStack.Pop();
                             num1 = numberStack.Pop();
                             numberStack.Push(num1 * num2);
                             break;
-                            case "/":
+                        case "/":
                             num2 = numberStack.Pop();
                             num1 = numberStack.Pop();
                             numberStack.Push(num1 / num2);
@@ -86,17 +113,11 @@ namespace assignment2
                             break;
                         default:
                             throw new Exception("errrr");
-                      
-                           
-
-                            
-
-
                     }
                 }
             }
-            
-            if(numberStack.Count == 1)
+
+            if (numberStack.Count == 1)
             {
                 return numberStack.Pop();
             }
@@ -104,7 +125,51 @@ namespace assignment2
             {
                 throw new Exception("err");
             }
+        }*/
+        public double Calculate(IEnumerable<Token> tokens)
+        {
+            var stack = new Stack<double>();
+            foreach (var token in tokens)
+            {
+                if (token.Type == TokenType.NumberType)
+                {
+                    stack.Push(token.NumericValue);
+                }
+                else
+                {
+                    var op = _operations.FirstOrDefault(o => o.Operator.Equals(token.InputValue, StringComparison.OrdinalIgnoreCase));
+                    if (op != null)
+                    {
+                        if (op is INullaryOperation nullaryOp)
+                        {
+                            stack.Push(nullaryOp.Value);
+                        }
+                        else if (op is IUnaryOperation unaryOp)
+                        {
+                            var operand = stack.Pop();
+                            stack.Push(unaryOp.Calculate(operand));
+                        }
+                        else if (op is IBinaryOperation binaryOp)
+                        {
+                            var operand2 = stack.Pop();
+                            var operand1 = stack.Pop();
+                            stack.Push(binaryOp.Calculate(operand1, operand2));
+                        }
+                    }
+                    else
+                    {
+                        throw new InvalidOperationException($"Unknown operation: {token.NumericValue}");
+                    }
+                }
+            }
+
+            return stack.Count == 1 ? stack.Pop() : throw new InvalidOperationException("Invalid expression");
         }
+
+        public IEnumerable<string> SupportedOperators => _operations.Select(op => op.Operator);
+
+        public IEnumerable<string> OperationsHelpText => _operations.Select(op => $"{op.Operator} - ({op.Name}) {op.Description}");
+
 
     }
 }

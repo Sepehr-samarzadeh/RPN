@@ -12,3 +12,4 @@ C:\Users\user\Desktop\cshpr\assignment2\obj\Debug\net8.0\refint\assignment2.dll
 C:\Users\user\Desktop\cshpr\assignment2\obj\Debug\net8.0\assignment2.pdb
 C:\Users\user\Desktop\cshpr\assignment2\obj\Debug\net8.0\assignment2.genruntimeconfig.cache
 C:\Users\user\Desktop\cshpr\assignment2\obj\Debug\net8.0\ref\assignment2.dll
+C:\Users\user\Desktop\cshpr\assignment2\obj\Debug\net8.0\assignment2.sourcelink.json

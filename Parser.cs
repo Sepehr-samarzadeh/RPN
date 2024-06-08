@@ -37,10 +37,10 @@ namespace assignment2
             foreach ( var token in tokenizedValue)
             {
                 if(double.TryParse(token,out double number)){
-                    tokenList.Add(new Token(token,TokenType.numberType));
+                    tokenList.Add(new Token(token,TokenType.NumberType));
                 }else if (supportedOperators.Contains(token))
                 {
-                    tokenList.Add(new Token(token,TokenType.operatorType));
+                    tokenList.Add(new Token(token,TokenType.OperatorType));
                 }else
                 {
                     throw new ArgumentException($"this {token} is not valid (its not number or recognized operator)");
