@@ -12,10 +12,10 @@ namespace assignment2
         public List<string> Helper = new List<string>();
         //public List<string> SupportedOperators = new List<string>();
         private readonly List<IOperation>_operations = new List<IOperation>();
-        public IEnumerator<IOperation>GetEnumerator() { return _operations.GetEnumerator(); }
+        public IEnumerator<IOperation>GetEnumerator() { return _operations.GetEnumerator(); } //returns the enumator can itterate
         IEnumerator IEnumerable.GetEnumerator() { return GetEnumerator(); }
         public int Count => _operations.Count; //i was forced to use => instead of normal way why??
-        public bool IsReadOnly => false;
+        public bool IsReadOnly => false; //since we can add operators 
         public void Add(IOperation operation)
         {
             _operations.Add(operation);
@@ -29,9 +29,9 @@ namespace assignment2
         {
             return _operations.Contains(operation);
         }
-        public void CopyTo(IOperation[] array, int arrayIndex)
+        public void CopyTo(IOperation[] array, int index)
         {
-            _operations.CopyTo(array, arrayIndex);
+            _operations.CopyTo(array, index);
         }
         public bool Remove(IOperation item)
         {
@@ -54,6 +54,7 @@ namespace assignment2
               "exp - (Exponentiation) calculates the exponent with the natural base e",
               "ln - (Logarithm) calculates the natural logarithm of a number"
             };
+
         }
 
        /* public double Calculate(List<Token> tokens)
@@ -137,38 +138,46 @@ namespace assignment2
                 }
                 else
                 {
-                    var op = _operations.FirstOrDefault(o => o.Operator.Equals(token.InputValue, StringComparison.OrdinalIgnoreCase));
-                    if (op != null)
+                    IOperation op = null;
+                    foreach (var operation in _operations)
                     {
-                        if (op is INullaryOperation nullaryOp)
+                        if (operation.Operator.Equals(token.InputValue, StringComparison.OrdinalIgnoreCase))
                         {
-                            stack.Push(nullaryOp.Value);
+                            op = operation;
+                            break;
                         }
-                        else if (op is IUnaryOperation unaryOp)
+                    }
+                        if (op != null)
+                    {
+                        if (op is INullaryOperation nullyobj)
                         {
-                            var operand = stack.Pop();
-                            stack.Push(unaryOp.Calculate(operand));
+                            stack.Push(nullyobj.Value);
                         }
-                        else if (op is IBinaryOperation binaryOp)
+                        else if (op is IUnaryOperation unaryobj)
                         {
-                            var operand2 = stack.Pop();
-                            var operand1 = stack.Pop();
-                            stack.Push(binaryOp.Calculate(operand1, operand2));
+                            var num = stack.Pop();
+                            stack.Push(unaryobj.Calculate(num));
+                        }
+                        else if (op is IBinaryOperation binaryobj)
+                        {
+                            var num2 = stack.Pop();
+                            var num1 = stack.Pop();
+                            stack.Push(binaryobj.Calculate(num1, num2));
                         }
                     }
                     else
                     {
-                        throw new InvalidOperationException($"Unknown operation: {token.NumericValue}");
+                        throw new InvalidOperationException($"this one is unknown ~> {token.NumericValue}");
                     }
                 }
             }
 
-            return stack.Count == 1 ? stack.Pop() : throw new InvalidOperationException("Invalid expression");
+            return stack.Count == 1 ? stack.Pop() : throw new InvalidOperationException("invalid expression");
         }
 
         public IEnumerable<string> SupportedOperators => _operations.Select(op => op.Operator);
 
-        public IEnumerable<string> OperationsHelpText => _operations.Select(op => $"{op.Operator} - ({op.Name}) {op.Description}");
+        public IEnumerable<string> OperationsHelp => _operations.Select(op => $"{op.Operator} - {op.Description}");
 
 
     }

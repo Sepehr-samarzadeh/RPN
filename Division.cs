@@ -8,7 +8,7 @@ namespace assignment2
 {
     public class Division : Operation,IBinaryOperation
     {
-        public Division() : base("Division", "/", "Performs the division of two numbers.")
+        public Division() : base("Division", "/", "division of two numbers.")
         {
         }
 

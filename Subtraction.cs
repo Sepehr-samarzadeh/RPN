@@ -8,7 +8,7 @@ namespace assignment2
 {
     public class Subtraction : Operation,IBinaryOperation
     {
-        public Subtraction() : base("Subtraction", "-", "Performs the subtraction of two numbers.")
+        public Subtraction() : base("Subtraction", "-", "subtraction of two numbers.")
         {
         }
 

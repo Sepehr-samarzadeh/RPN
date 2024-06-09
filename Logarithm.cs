@@ -8,7 +8,7 @@ namespace assignment2
 {
     public class Logarithm:Operation,IUnaryOperation
     {
-        public Logarithm() : base("Logarithm", "ln", "Calculates the natural logarithm of a number.")
+        public Logarithm() : base("Logarithm", "ln", "Calculates the logarithm of a number.")
         {
         }
 

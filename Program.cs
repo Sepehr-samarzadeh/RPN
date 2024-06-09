@@ -52,11 +52,14 @@ internal class Program
         calculator.Add(new Logarithm());
         calculator.Add(new Constant("pi", "pi", "constant pi", Math.PI));
         calculator.Add(new Constant("e", "e", "constant e", Math.E));
-
         var parser = new Parser(calculator.SupportedOperators);
-        var menu = new TextMenu(calculator.Helper);
+        var menu = new TextMenu(calculator.OperationsHelp);
         var controller = new Controller(calculator, parser, menu);
         controller.Run();
+
+
+        //when we have interfaces why we doing the polymorphys?
+        //is the virtual and overriding count as polymorph?
 
 
 

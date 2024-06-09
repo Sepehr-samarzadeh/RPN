@@ -10,6 +10,6 @@ namespace assignment2
     {
         double Calculate(IEnumerable<Token> tokens);
         IEnumerable<string> SupportedOperators { get; }
-        IEnumerable<string> OperationsHelpText { get; }
+        IEnumerable<string> OperationsHelp { get; }
     }
 }
