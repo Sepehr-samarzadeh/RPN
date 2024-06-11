@@ -58,8 +58,7 @@ internal class Program
         controller.Run();
 
 
-        //when we have interfaces why we doing the polymorphys?
-        //is the virtual and overriding count as polymorph?
+        
 
 
         //what is the job of Ienumerator and Ienumerable I cant undersatnd them fully -> i just know when we using Icollection in order to iterate to them we need to make an Ienumerator instance to iterate

@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace assignment2
 {
-    public class RPNCalculator : ICalculator,ICollection<IOperation>
+    public class RPNCalculator : ICalculator, ICollection<IOperation>
     {
         //public List<string> Helper = new List<string>();
         //public List<string> SupportedOperators = new List<string>();
         //public IList<string> SupportedOperators { get; }
         //public IList<string> OperationsHelp { get; }
-        private readonly List<IOperation>_operations = new List<IOperation>();
-        public IEnumerator<IOperation>GetEnumerator() { return _operations.GetEnumerator(); }
+        private readonly List<IOperation> _operations = new List<IOperation>();
+        public IEnumerator<IOperation> GetEnumerator() { return _operations.GetEnumerator(); }
         IEnumerator IEnumerable.GetEnumerator() { return GetEnumerator(); }
         public int Count => _operations.Count; //i was forced to use => instead of normal way why?? //is it possible to explain => one more time ( act as a function but pretteir int is a return value and its get the operration in front of the the arrow
         public bool IsReadOnly => false;
@@ -44,22 +44,22 @@ namespace assignment2
 
         public RPNCalculator()
         {
-             //SupportedOperators = new List<string>();
-             //OperationsHelp = new List<string>();
-        //this.SupportedOperators = new List<string> { "+", "-", "*", "/", "^", "sqrt", "exp", "ln" };
-        /*this.Helper = new List<string>
-        {
-          "+ - (Addition) adds two numbers",
-          "- - (Subtraction) subtracts two numbers",
-          "* - (Multiplication) multiplies two numbers",
-          "/ - (Division) calculates the fraction of two numbers",
-          "ˆ - (Power) calculates the power of two numbers",
-          "sqrt - (SquareRoot) calculates the square root of a number",
-          "exp - (Exponentiation) calculates the exponent with the natural base e",
-          "ln - (Logarithm) calculates the natural logarithm of a number"
-        };*/
+            //SupportedOperators = new List<string>();
+            //OperationsHelp = new List<string>();
+            //this.SupportedOperators = new List<string> { "+", "-", "*", "/", "^", "sqrt", "exp", "ln" };
+            /*this.Helper = new List<string>
+            {
+              "+ - (Addition) adds two numbers",
+              "- - (Subtraction) subtracts two numbers",
+              "* - (Multiplication) multiplies two numbers",
+              "/ - (Division) calculates the fraction of two numbers",
+              "ˆ - (Power) calculates the power of two numbers",
+              "sqrt - (SquareRoot) calculates the square root of a number",
+              "exp - (Exponentiation) calculates the exponent with the natural base e",
+              "ln - (Logarithm) calculates the natural logarithm of a number"
+            };*/
 
-    }
+        }
 
         /* public double Calculate(List<Token> tokens)
          {
@@ -168,6 +168,11 @@ namespace assignment2
                                 stack.Push(binaryobj.Calculate(num1, num2));
                                 break;
                         }
+                        //if (op is INullaryOperation x)
+                        //{
+                        //    //INullaryOperation x = (INullaryOperation)op;
+                        //    stack.Push(x.Value);
+                        //}
                     }
                     else
                     {

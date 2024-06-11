@@ -8,9 +8,9 @@ namespace assignment2
 {
     public class Parser:IParser
     {
-        public List<string> supportedOperators = new List<string>();
+        public IList<string> supportedOperators = new List<string>();
 
-        public Parser(List<string>listOfOperators) {
+        public Parser(IList<string>listOfOperators) {
             this.supportedOperators = listOfOperators;
         }
 

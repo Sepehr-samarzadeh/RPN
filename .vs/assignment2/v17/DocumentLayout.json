@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\constant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:constant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\ibinaryoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:ibinaryoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\rpncalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:rpncalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\constant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:constant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\icalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +17,34 @@
     {
       "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\rpncalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:rpncalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\textmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:textmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\squareroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:squareroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\operation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:operation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\addition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:addition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,13 +62,104 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TextMenu.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\TextMenu.cs",
+              "RelativeDocumentMoniker": "TextMenu.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\TextMenu.cs",
+              "RelativeToolTip": "TextMenu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T12:51:18.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Parser.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Parser.cs",
+              "RelativeDocumentMoniker": "Parser.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Parser.cs",
+              "RelativeToolTip": "Parser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T12:50:59.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Controller.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Controller.cs",
+              "RelativeDocumentMoniker": "Controller.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Controller.cs",
+              "RelativeToolTip": "Controller.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwCwAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T12:39:00.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Squareroot.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Squareroot.cs",
+              "RelativeDocumentMoniker": "Squareroot.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Squareroot.cs",
+              "RelativeToolTip": "Squareroot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T12:35:39.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Operation.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Operation.cs",
+              "RelativeDocumentMoniker": "Operation.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Operation.cs",
+              "RelativeToolTip": "Operation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T12:35:30.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Addition.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Addition.cs",
+              "RelativeDocumentMoniker": "Addition.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Addition.cs",
+              "RelativeToolTip": "Addition.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T12:35:21.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "IBinaryOperation.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\IBinaryOperation.cs",
+              "RelativeDocumentMoniker": "IBinaryOperation.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\IBinaryOperation.cs",
+              "RelativeToolTip": "IBinaryOperation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T12:35:12.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Constant.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Constant.cs",
               "RelativeDocumentMoniker": "Constant.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Constant.cs",
               "RelativeToolTip": "Constant.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T16:41:53.626Z",
               "EditorCaption": ""
@@ -66,19 +185,20 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAABnAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAQwDwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T00:12:04.038Z"
+              "WhenOpened": "2024-06-09T00:12:04.038Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "RPNCalculator.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\RPNCalculator.cs",
               "RelativeDocumentMoniker": "RPNCalculator.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\RPNCalculator.cs",
               "RelativeToolTip": "RPNCalculator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAPAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAKMAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T10:17:22.32Z",
               "EditorCaption": ""

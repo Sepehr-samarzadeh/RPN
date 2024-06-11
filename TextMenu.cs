@@ -8,8 +8,8 @@ namespace assignment2
 {
     internal class TextMenu : IMenu
     {
-        public List<string> Help {  get;}
-        public TextMenu(List<string>listOfHelps) {
+        public IList<string> Help {  get;}
+        public TextMenu(IList<string>listOfHelps) {
             this.Help = listOfHelps;
         }
 
