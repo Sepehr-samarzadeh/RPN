@@ -9,7 +9,7 @@ namespace assignment2
     public interface ICalculator
     {
         double Calculate(IEnumerable<Token> tokens);
-        IEnumerable<string> SupportedOperators { get; }
-        IEnumerable<string> OperationsHelp { get; }
+        public IList<string> SupportedOperators {  get; }
+        public IList<string> OperationsHelp {  get; }
     }
 }

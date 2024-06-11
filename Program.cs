@@ -42,19 +42,19 @@ internal class Program
                     }
         }*/
 
-        var calculator = new RPNCalculator();
-        calculator.Add(new Addition());
-        calculator.Add(new Subtraction());
-        calculator.Add(new Multiplication());
-        calculator.Add(new Division());
-        calculator.Add(new Power());
-        calculator.Add(new Squareroot());
-        calculator.Add(new Logarithm());
-        calculator.Add(new Constant("pi", "pi", "constant pi", Math.PI));
-        calculator.Add(new Constant("e", "e", "constant e", Math.E));
-        var parser = new Parser(calculator.SupportedOperators);
-        var menu = new TextMenu(calculator.OperationsHelp);
-        var controller = new Controller(calculator, parser, menu);
+        var mycalculator = new RPNCalculator();
+        mycalculator.Add(new Addition());
+        mycalculator.Add(new Subtraction());
+        mycalculator.Add(new Multiplication());
+        mycalculator.Add(new Division());
+        mycalculator.Add(new Power());
+        mycalculator.Add(new Squareroot());
+        mycalculator.Add(new Logarithm());
+        mycalculator.Add(new Constant("pi", "pi", "constant pi", Math.PI));
+        mycalculator.Add(new Constant("e", "e", "constant e", Math.E));
+        var parser = new Parser(mycalculator.SupportedOperators); //cant convert from I list to List !?
+        var menu = new TextMenu(mycalculator.OperationsHelp);
+        var controller = new Controller(mycalculator, parser, menu);
         controller.Run();
 
 
@@ -62,9 +62,12 @@ internal class Program
         //is the virtual and overriding count as polymorph?
 
 
+        //what is the job of Ienumerator and Ienumerable I cant undersatnd them fully -> i just know when we using Icollection in order to iterate to them we need to make an Ienumerator instance to iterate
+
+        //LINQUE is mainy used to make the cashing effect right ? if its the case can we using dictionaries to to the same job ( or if we make a personalized dictionary class with some methods to to the same but even faster)
 
 
-
+        //do we have to always implemet all the methods in ICollection ?
 
 
 

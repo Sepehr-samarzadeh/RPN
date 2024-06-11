@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\constant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:constant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\rpncalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:rpncalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\icalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:icalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|c:\\users\\user\\desktop\\cshpr\\assignment2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49F1EAAC-A586-433B-936A-77710DBB602E}|assignment2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Constant.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Constant.cs",
+              "RelativeDocumentMoniker": "Constant.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Constant.cs",
+              "RelativeToolTip": "Constant.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T16:41:53.626Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -32,37 +53,32 @@
               "RelativeDocumentMoniker": "ICalculator.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\ICalculator.cs",
               "RelativeToolTip": "ICalculator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAzAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T00:16:03.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAQwDcAAAA5AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAABnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T00:12:04.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "WhenOpened": "2024-06-09T00:12:04.038Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RPNCalculator.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\RPNCalculator.cs",
               "RelativeDocumentMoniker": "RPNCalculator.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\cshpr\\assignment2\\RPNCalculator.cs",
               "RelativeToolTip": "RPNCalculator.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAUwDcAAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T10:17:22.32Z",
               "EditorCaption": ""
